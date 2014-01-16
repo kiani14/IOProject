@@ -91,7 +91,7 @@ public class IOController
 			fileReader = new Scanner(currentSaveFile);
 			while(fileReader.hasNext())
 			{
-				fileContents += fileReader.nextLine();
+				fileContent += fileReader.nextLine();
 			}
 			fileReader.close();
 		}
@@ -99,7 +99,7 @@ public class IOController
 		{
 			JOptionPane.showMessageDialog(appFrame, fileDoesNotExist.getMessage());
 		}
-		return fileContents;
+		return fileContent;
 		
 	}
 	private void convertTextToGames(String currentInfo)
